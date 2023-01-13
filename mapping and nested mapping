@@ -23,7 +23,7 @@ contract MappingBasic {
         isFriend[msg.sender][address(this)] = true;
     }
     
-    function get(address _addr) external returns (uint) {
+    function get(address _addr) external view returns (uint) {
         return balances[_addr];
     }
     
