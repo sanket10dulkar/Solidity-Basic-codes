@@ -1,0 +1,33 @@
+pragma solidity ^ 0.6.0;
+
+contract check {
+    address owner;
+
+    modifier ownable() {
+        if (msg.sender == owner)
+        _;
+    }
+
+    modifier value(uint _amount) {
+        if (msg.value >= _amount)
+        _;
+    }
+}
+
+contract actual is check{
+    uint initialvalue;
+    mapping (address => bool) public registeredAddresses;
+
+    constructor(uint initialmount) public{
+        initialvalue = initialmount;
+    }
+
+    function assignowner() internal value(initialvalue) {
+        registeredAddresses[msg.sender] = true;
+    }
+
+    function changePrice(uint _price) public ownable() {
+        initialvalue = _price;
+    }
+
+}
