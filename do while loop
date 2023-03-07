@@ -1,0 +1,9 @@
+function printNumbers() public pure returns (uint256[] memory) {
+    uint256[] memory numbers = new uint256[](5);
+    uint256 i = 0;
+    do {
+        numbers[i] = i + 1;
+        i++;
+    } while (i < 5);
+    return numbers;
+}
