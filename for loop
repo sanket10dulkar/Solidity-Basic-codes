@@ -1,3 +1,26 @@
+// SPDX-License_Identifier: MIT
+pragma solidity ^0.6.0;
+contract whileContract {
+
+    constructor() public {
+
+    }
+
+    function loop() public view returns (uint256[] memory) {
+        uint256[] memory name = new uint256[](5);
+
+        for (uint i = 0; i < 5; i++) {
+            name[i] = i+1;
+            i++;
+        }
+        return name;
+    }
+
+}
+
+
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
