@@ -1,4 +1,6 @@
-//Abstract Contract is one which contains at least one function without any implementation. Such a contract is used as a base contract. Generally an abstract contract contains both implemented as well as abstract functions. Derived contract will implement the abstract function and use the existing functions as and when required.
+//Abstract Contract is one which contains at least one function without any implementation. Such a contract is used as a base contract. 
+Generally an abstract contract contains both implemented as well as abstract functions. 
+Derived contract will implement the abstract function and use the existing functions as and when required.
 //In case, a derived contract is not implementing the abstract function then this derived contract will be marked as abstract.
 
 pragma solidity ^0.5.0;
