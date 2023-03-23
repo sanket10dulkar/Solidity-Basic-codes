@@ -1,0 +1,20 @@
+pragma solidity ^0.6.0;
+
+contract bid {
+    struct Bid {
+  address bidOwner;
+  uint bidAmount;
+  bytes32 nameEntity;
+}
+
+mapping(bytes32 => Bid[]) highestBidder;
+  function getBidCount(bytes32 name) public view returns (uint) {
+    return highestBidder[name].length;
+}
+
+function getBid(bytes32 name, uint index) public view returns (address, uint, bytes32) {
+    Bid storage bid = highestBidder[name][index];
+
+    return (bid.bidOwner, bid.bidAmount, bid.nameEntity);
+}
+}
