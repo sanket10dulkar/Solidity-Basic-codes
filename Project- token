@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@sanket10dulkar 
-swetshaw
-/
-solidity-tutorials
-Public
-Fork your own copy of swetshaw/solidity-tutorials
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-solidity-tutorials/LaunchCryptoToken/8_MyCryptoToken copy.sol
-@swetshaw
-swetshaw [First Commit] Added solidity tutorials
-Latest commit 1326cc6 on Mar 12, 2022
- History
- 1 contributor
-74 lines (61 sloc)  2.03 KB
-
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
