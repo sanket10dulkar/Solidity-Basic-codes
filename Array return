@@ -17,4 +17,10 @@ function getBid(bytes32 name, uint index) public view returns (address, uint, by
 
     return (bid.bidOwner, bid.bidAmount, bid.nameEntity);
 }
+
+//2️⃣ Returning the Entire Array:
+
+function getArr() public view returns (uint[] memory) {
+return arr;
+}
 }
