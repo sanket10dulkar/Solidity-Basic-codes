@@ -23,4 +23,10 @@ function getBid(bytes32 name, uint index) public view returns (address, uint, by
 function getArr() public view returns (uint[] memory) {
 return arr;
 }
+
+//7️⃣ Working with Memory Arrays:
+function examples() external {
+uint[] memory a = new uint[](5);
+}
+
 }
