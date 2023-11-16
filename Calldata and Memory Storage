@@ -1,3 +1,7 @@
+ calldata cannot be modified by the function.
+memory can modify the values and not stored in blockchain
+storage is permament in blockchain
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
